@@ -28,7 +28,7 @@ struct Company: ModelProtocol {
         self.activitiesStartingDate = activitiesStartingDate
         self.isMei = isMei
         
-        self.validations = [validateEmail, validatePhone, validateCNPJ]
+        self.validations = [validateName, validateEmail, validatePhone, validateCNPJ]
     }
 }
 
@@ -36,6 +36,14 @@ struct Company: ModelProtocol {
 // MARK: - Validations
 
 extension Company {
+    private func validateName() -> ValidationState {
+        let count = founderName.split(separator: " ").count
+        if count < 2 {
+            return .invalid("O nome do proprietário não é válido.")
+        }
+        return .valid
+    }
+    
     private func validateEmail() -> ValidationState {
         let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPredicate = NSPredicate(format: "SELF MATCHES %@", regex)
