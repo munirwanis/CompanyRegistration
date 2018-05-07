@@ -14,6 +14,8 @@
 		A127BE3D209F991D004D4B0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A127BE3B209F991D004D4B0C /* LaunchScreen.storyboard */; };
 		A127BE48209F991D004D4B0C /* CompanyRegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE47209F991D004D4B0C /* CompanyRegistrationTests.swift */; };
 		A127BE53209FFCD8004D4B0C /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE52209FFCD8004D4B0C /* Box.swift */; };
+		A127BE57209FFE99004D4B0C /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE56209FFE99004D4B0C /* Company.swift */; };
+		A127BE59209FFF79004D4B0C /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE58209FFF79004D4B0C /* ModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		A127BE47209F991D004D4B0C /* CompanyRegistrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRegistrationTests.swift; sourceTree = "<group>"; };
 		A127BE49209F991D004D4B0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A127BE52209FFCD8004D4B0C /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		A127BE56209FFE99004D4B0C /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		A127BE58209FFF79004D4B0C /* ModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		A127BE31209F9919004D4B0C /* CompanyRegistration */ = {
 			isa = PBXGroup;
 			children = (
+				A127BE54209FFE06004D4B0C /* Domain */,
 				A127BE32209F9919004D4B0C /* AppDelegate.swift */,
 				A127BE34209F9919004D4B0C /* ViewController.swift */,
 				A127BE36209F9919004D4B0C /* Main.storyboard */,
@@ -97,6 +102,23 @@
 				A127BE49209F991D004D4B0C /* Info.plist */,
 			);
 			path = CompanyRegistrationTests;
+			sourceTree = "<group>";
+		};
+		A127BE54209FFE06004D4B0C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A127BE55209FFE20004D4B0C /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A127BE55209FFE20004D4B0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A127BE56209FFE99004D4B0C /* Company.swift */,
+				A127BE58209FFF79004D4B0C /* ModelProtocol.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +224,9 @@
 			files = (
 				A127BE53209FFCD8004D4B0C /* Box.swift in Sources */,
 				A127BE35209F9919004D4B0C /* ViewController.swift in Sources */,
+				A127BE59209FFF79004D4B0C /* ModelProtocol.swift in Sources */,
 				A127BE33209F9919004D4B0C /* AppDelegate.swift in Sources */,
+				A127BE57209FFE99004D4B0C /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
