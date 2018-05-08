@@ -18,6 +18,8 @@
 		A127BE5C20A209A4004D4B0C /* ListCompaniesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE5B20A209A4004D4B0C /* ListCompaniesTableViewController.swift */; };
 		A127BE5F20A248BF004D4B0C /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE5E20A248BF004D4B0C /* CompanyCell.swift */; };
 		A127BE6120A249B0004D4B0C /* CompanyPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6020A249B0004D4B0C /* CompanyPresentation.swift */; };
+		A127BE6320A24BE9004D4B0C /* RetrieveContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6220A24BE9004D4B0C /* RetrieveContacts.swift */; };
+		A127BE6520A24BF4004D4B0C /* InMemoryContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6420A24BF4004D4B0C /* InMemoryContacts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		A127BE5B20A209A4004D4B0C /* ListCompaniesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCompaniesTableViewController.swift; sourceTree = "<group>"; };
 		A127BE5E20A248BF004D4B0C /* CompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
 		A127BE6020A249B0004D4B0C /* CompanyPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPresentation.swift; sourceTree = "<group>"; };
+		A127BE6220A24BE9004D4B0C /* RetrieveContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveContacts.swift; sourceTree = "<group>"; };
+		A127BE6420A24BF4004D4B0C /* InMemoryContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryContacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				A127BE55209FFE20004D4B0C /* Model */,
+				A127BE6220A24BE9004D4B0C /* RetrieveContacts.swift */,
+				A127BE6420A24BF4004D4B0C /* InMemoryContacts.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -245,11 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A127BE53209FFCD8004D4B0C /* Box.swift in Sources */,
+				A127BE6520A24BF4004D4B0C /* InMemoryContacts.swift in Sources */,
 				A127BE5F20A248BF004D4B0C /* CompanyCell.swift in Sources */,
 				A127BE59209FFF79004D4B0C /* ModelProtocol.swift in Sources */,
 				A127BE33209F9919004D4B0C /* AppDelegate.swift in Sources */,
 				A127BE6120A249B0004D4B0C /* CompanyPresentation.swift in Sources */,
 				A127BE57209FFE99004D4B0C /* Company.swift in Sources */,
+				A127BE6320A24BE9004D4B0C /* RetrieveContacts.swift in Sources */,
 				A127BE5C20A209A4004D4B0C /* ListCompaniesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
