@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+protocol RetrieveContacts {
+    func getCompanies() -> [Company]
+    func getCompany(from email: String) -> Company?
+    func insert(_ company: Company) -> Bool
+    func delete(_ company: Company) -> Bool
+}

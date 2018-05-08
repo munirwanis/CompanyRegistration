@@ -20,6 +20,7 @@
 		A127BE6120A249B0004D4B0C /* CompanyPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6020A249B0004D4B0C /* CompanyPresentation.swift */; };
 		A127BE6320A24BE9004D4B0C /* RetrieveContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6220A24BE9004D4B0C /* RetrieveContacts.swift */; };
 		A127BE6520A24BF4004D4B0C /* InMemoryContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6420A24BF4004D4B0C /* InMemoryContacts.swift */; };
+		A127BE6920A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6720A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		A127BE6020A249B0004D4B0C /* CompanyPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPresentation.swift; sourceTree = "<group>"; };
 		A127BE6220A24BE9004D4B0C /* RetrieveContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveContacts.swift; sourceTree = "<group>"; };
 		A127BE6420A24BF4004D4B0C /* InMemoryContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryContacts.swift; sourceTree = "<group>"; };
+		A127BE6820A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CompanyCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		A127BE31209F9919004D4B0C /* CompanyRegistration */ = {
 			isa = PBXGroup;
 			children = (
+				A127BE6620A24E60004D4B0C /* Data */,
 				A127BE5A20A2069B004D4B0C /* View */,
 				A127BE54209FFE06004D4B0C /* Domain */,
 				A127BE32209F9919004D4B0C /* AppDelegate.swift */,
@@ -147,6 +150,14 @@
 				A127BE6020A249B0004D4B0C /* CompanyPresentation.swift */,
 			);
 			path = ListCompanies;
+			sourceTree = "<group>";
+		};
+		A127BE6620A24E60004D4B0C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A127BE6720A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodeld */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +265,7 @@
 				A127BE6520A24BF4004D4B0C /* InMemoryContacts.swift in Sources */,
 				A127BE5F20A248BF004D4B0C /* CompanyCell.swift in Sources */,
 				A127BE59209FFF79004D4B0C /* ModelProtocol.swift in Sources */,
+				A127BE6920A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodeld in Sources */,
 				A127BE33209F9919004D4B0C /* AppDelegate.swift in Sources */,
 				A127BE6120A249B0004D4B0C /* CompanyPresentation.swift in Sources */,
 				A127BE57209FFE99004D4B0C /* Company.swift in Sources */,
@@ -523,6 +535,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A127BE6720A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A127BE6820A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = A127BE6820A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodel */;
+			path = CompanyCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A127BE27209F9919004D4B0C /* Project object */;
 }
