@@ -9,7 +9,7 @@
 import XCTest
 @testable import CompanyRegistration
 
-class CompanyRegistrationTests: XCTestCase {
+class ListCompaniesViewModelTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,9 +21,10 @@ class CompanyRegistrationTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testInitials() {
+        let viewModel = ListCompaniesViewModel()
+        let initials = viewModel.initials(with: "Munir Xavier Wanis")
+        XCTAssertTrue(initials == "MXW")
     }
     
     func testPerformanceExample() {

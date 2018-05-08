@@ -11,7 +11,7 @@
 		A127BE38209F9919004D4B0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A127BE36209F9919004D4B0C /* Main.storyboard */; };
 		A127BE3A209F991D004D4B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A127BE39209F991D004D4B0C /* Assets.xcassets */; };
 		A127BE3D209F991D004D4B0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A127BE3B209F991D004D4B0C /* LaunchScreen.storyboard */; };
-		A127BE48209F991D004D4B0C /* CompanyRegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE47209F991D004D4B0C /* CompanyRegistrationTests.swift */; };
+		A127BE48209F991D004D4B0C /* ListCompaniesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE47209F991D004D4B0C /* ListCompaniesViewModelTests.swift */; };
 		A127BE53209FFCD8004D4B0C /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE52209FFCD8004D4B0C /* Box.swift */; };
 		A127BE57209FFE99004D4B0C /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE56209FFE99004D4B0C /* Company.swift */; };
 		A127BE59209FFF79004D4B0C /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE58209FFF79004D4B0C /* ModelProtocol.swift */; };
@@ -21,6 +21,7 @@
 		A127BE6320A24BE9004D4B0C /* RetrieveContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6220A24BE9004D4B0C /* RetrieveContacts.swift */; };
 		A127BE6520A24BF4004D4B0C /* InMemoryContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6420A24BF4004D4B0C /* InMemoryContacts.swift */; };
 		A127BE6920A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6720A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodeld */; };
+		A127BE6B20A2566E004D4B0C /* ListCompaniesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6A20A2566E004D4B0C /* ListCompaniesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,7 @@
 		A127BE3C209F991D004D4B0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A127BE3E209F991D004D4B0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A127BE43209F991D004D4B0C /* CompanyRegistrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompanyRegistrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A127BE47209F991D004D4B0C /* CompanyRegistrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRegistrationTests.swift; sourceTree = "<group>"; };
+		A127BE47209F991D004D4B0C /* ListCompaniesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCompaniesViewModelTests.swift; sourceTree = "<group>"; };
 		A127BE49209F991D004D4B0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A127BE52209FFCD8004D4B0C /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		A127BE56209FFE99004D4B0C /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		A127BE6220A24BE9004D4B0C /* RetrieveContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveContacts.swift; sourceTree = "<group>"; };
 		A127BE6420A24BF4004D4B0C /* InMemoryContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryContacts.swift; sourceTree = "<group>"; };
 		A127BE6820A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CompanyCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		A127BE6A20A2566E004D4B0C /* ListCompaniesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCompaniesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				A127BE6620A24E60004D4B0C /* Data */,
-				A127BE5A20A2069B004D4B0C /* View */,
+				A127BE5A20A2069B004D4B0C /* Presentation */,
 				A127BE54209FFE06004D4B0C /* Domain */,
 				A127BE32209F9919004D4B0C /* AppDelegate.swift */,
 				A127BE39209F991D004D4B0C /* Assets.xcassets */,
@@ -108,7 +110,7 @@
 		A127BE46209F991D004D4B0C /* CompanyRegistrationTests */ = {
 			isa = PBXGroup;
 			children = (
-				A127BE47209F991D004D4B0C /* CompanyRegistrationTests.swift */,
+				A127BE47209F991D004D4B0C /* ListCompaniesViewModelTests.swift */,
 				A127BE49209F991D004D4B0C /* Info.plist */,
 			);
 			path = CompanyRegistrationTests;
@@ -133,13 +135,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A127BE5A20A2069B004D4B0C /* View */ = {
+		A127BE5A20A2069B004D4B0C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				A127BE5D20A22908004D4B0C /* ListCompanies */,
 				A127BE36209F9919004D4B0C /* Main.storyboard */,
 			);
-			path = View;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		A127BE5D20A22908004D4B0C /* ListCompanies */ = {
@@ -148,6 +150,7 @@
 				A127BE5B20A209A4004D4B0C /* ListCompaniesTableViewController.swift */,
 				A127BE5E20A248BF004D4B0C /* CompanyCell.swift */,
 				A127BE6020A249B0004D4B0C /* CompanyPresentation.swift */,
+				A127BE6A20A2566E004D4B0C /* ListCompaniesViewModel.swift */,
 			);
 			path = ListCompanies;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				A127BE6120A249B0004D4B0C /* CompanyPresentation.swift in Sources */,
 				A127BE57209FFE99004D4B0C /* Company.swift in Sources */,
 				A127BE6320A24BE9004D4B0C /* RetrieveContacts.swift in Sources */,
+				A127BE6B20A2566E004D4B0C /* ListCompaniesViewModel.swift in Sources */,
 				A127BE5C20A209A4004D4B0C /* ListCompaniesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A127BE48209F991D004D4B0C /* CompanyRegistrationTests.swift in Sources */,
+				A127BE48209F991D004D4B0C /* ListCompaniesViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
