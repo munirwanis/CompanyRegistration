@@ -46,7 +46,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CompanyCell" rowHeight="119" id="8ck-eB-w9t">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CompanyCell" rowHeight="119" id="8ck-eB-w9t" customClass="CompanyCell" customModule="CompanyRegistration" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="308" width="375" height="119"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8ck-eB-w9t" id="KZA-9n-mGT">
@@ -108,6 +108,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="companyInitialsLabel" destination="WQA-lA-k1v" id="SMu-oz-sb7"/>
+                                    <outlet property="companyNameLabel" destination="MXl-Xa-gdK" id="UNy-y9-UOJ"/>
+                                    <outlet property="companyOwnerNameLabel" destination="Xe4-Gv-rk5" id="PBG-uQ-vUa"/>
                                     <segue destination="7sH-3l-4je" kind="show" id="MbS-oi-L2E"/>
                                 </connections>
                             </tableViewCell>
