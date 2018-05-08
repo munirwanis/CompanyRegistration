@@ -44,6 +44,6 @@ class ListCompaniesViewModel {
         let initials = words.reduce("") { (result: String, next: String) -> String in
             return result + String(next.first ?? Character(""))
         }
-        return initials
+        return initials.uppercased()
     }
 }

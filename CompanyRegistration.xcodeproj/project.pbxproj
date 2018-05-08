@@ -22,6 +22,8 @@
 		A127BE6520A24BF4004D4B0C /* InMemoryContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6420A24BF4004D4B0C /* InMemoryContacts.swift */; };
 		A127BE6920A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6720A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodeld */; };
 		A127BE6B20A2566E004D4B0C /* ListCompaniesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6A20A2566E004D4B0C /* ListCompaniesViewModel.swift */; };
+		A127BE6D20A2642D004D4B0C /* RetrieveContactsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6C20A2642D004D4B0C /* RetrieveContactsMock.swift */; };
+		A127BE6F20A264F5004D4B0C /* RetrieveContactsFailureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6E20A264F5004D4B0C /* RetrieveContactsFailureMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		A127BE6420A24BF4004D4B0C /* InMemoryContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryContacts.swift; sourceTree = "<group>"; };
 		A127BE6820A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CompanyCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		A127BE6A20A2566E004D4B0C /* ListCompaniesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCompaniesViewModel.swift; sourceTree = "<group>"; };
+		A127BE6C20A2642D004D4B0C /* RetrieveContactsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveContactsMock.swift; sourceTree = "<group>"; };
+		A127BE6E20A264F5004D4B0C /* RetrieveContactsFailureMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveContactsFailureMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				A127BE47209F991D004D4B0C /* ListCompaniesViewModelTests.swift */,
+				A127BE6C20A2642D004D4B0C /* RetrieveContactsMock.swift */,
+				A127BE6E20A264F5004D4B0C /* RetrieveContactsFailureMock.swift */,
 				A127BE49209F991D004D4B0C /* Info.plist */,
 			);
 			path = CompanyRegistrationTests;
@@ -148,9 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				A127BE5B20A209A4004D4B0C /* ListCompaniesTableViewController.swift */,
+				A127BE6A20A2566E004D4B0C /* ListCompaniesViewModel.swift */,
 				A127BE5E20A248BF004D4B0C /* CompanyCell.swift */,
 				A127BE6020A249B0004D4B0C /* CompanyPresentation.swift */,
-				A127BE6A20A2566E004D4B0C /* ListCompaniesViewModel.swift */,
 			);
 			path = ListCompanies;
 			sourceTree = "<group>";
@@ -282,6 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A127BE6D20A2642D004D4B0C /* RetrieveContactsMock.swift in Sources */,
+				A127BE6F20A264F5004D4B0C /* RetrieveContactsFailureMock.swift in Sources */,
 				A127BE48209F991D004D4B0C /* ListCompaniesViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

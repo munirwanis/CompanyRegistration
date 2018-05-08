@@ -11,20 +11,36 @@ import XCTest
 
 class ListCompaniesViewModelTests: XCTestCase {
     
+    var viewModel: ListCompaniesViewModel = ListCompaniesViewModel()
+    var viewModelFailure: ListCompaniesViewModel = ListCompaniesViewModel()
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        viewModel = ListCompaniesViewModel(data: RetrieveContactsMock())
+        viewModelFailure = ListCompaniesViewModel(data: RetrieveContactsFailureMock())
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        
     }
     
     func testInitials() {
-        let viewModel = ListCompaniesViewModel()
         let initials = viewModel.initials(with: "Munir Xavier Wanis")
         XCTAssertTrue(initials == "MXW")
+    }
+    
+    func testCompanyCount() {
+        XCTAssertTrue(viewModel.count == RetrieveContactsMock().getCompanies().count)
+    }
+    
+    func testEmptyCompanies() {
+        XCTAssertTrue(viewModelFailure.isEmpty)
+    }
+    
+    func testGetCompanyAt() {
+        XCTAssertTrue(viewModel.getCompany(at: 0).name == RetrieveContactsMock().getCompanies()[0].fantasyName)
     }
     
     func testPerformanceExample() {
