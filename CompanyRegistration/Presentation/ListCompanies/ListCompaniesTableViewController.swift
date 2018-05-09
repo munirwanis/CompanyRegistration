@@ -45,8 +45,9 @@ class ListCompaniesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete, !viewModel.isEmpty {
-            //TODO: Adds remove from index
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            if viewModel.removeCompany(at: indexPath.row) {
+                tableView.reloadSections(IndexSet(integer: 0), with: .fade)
+            }
         }
     }
     
@@ -59,6 +60,12 @@ class ListCompaniesTableViewController: UITableViewController {
         let company = viewModel.getCompany(at: indexPath.row)
         cell.data = company
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            viewModel.prepare(for: segue, at: indexPath.row)
+        }
     }
 
     /*

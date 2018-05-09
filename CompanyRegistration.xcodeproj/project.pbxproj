@@ -28,6 +28,7 @@
 		A127BE7320A36C4D004D4B0C /* Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7220A36C4D004D4B0C /* Do.swift */; };
 		A127BE7720A39A79004D4B0C /* DetailCompanyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7620A39A79004D4B0C /* DetailCompanyTableViewController.swift */; };
 		A127BE7920A39A90004D4B0C /* CreateCompanyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7820A39A90004D4B0C /* CreateCompanyTableViewController.swift */; };
+		A127BE7B20A3AAFD004D4B0C /* DetailCompanyPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7A20A3AAFD004D4B0C /* DetailCompanyPresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		A127BE7220A36C4D004D4B0C /* Do.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Do.swift; sourceTree = "<group>"; };
 		A127BE7620A39A79004D4B0C /* DetailCompanyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCompanyTableViewController.swift; sourceTree = "<group>"; };
 		A127BE7820A39A90004D4B0C /* CreateCompanyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyTableViewController.swift; sourceTree = "<group>"; };
+		A127BE7A20A3AAFD004D4B0C /* DetailCompanyPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCompanyPresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				A127BE7620A39A79004D4B0C /* DetailCompanyTableViewController.swift */,
+				A127BE7A20A3AAFD004D4B0C /* DetailCompanyPresentation.swift */,
 			);
 			path = DetailCompany;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A127BE7B20A3AAFD004D4B0C /* DetailCompanyPresentation.swift in Sources */,
 				A127BE53209FFCD8004D4B0C /* Box.swift in Sources */,
 				A127BE6520A24BF4004D4B0C /* InMemoryContacts.swift in Sources */,
 				A127BE5F20A248BF004D4B0C /* CompanyCell.swift in Sources */,

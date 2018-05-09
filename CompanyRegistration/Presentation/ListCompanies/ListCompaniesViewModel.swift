@@ -6,33 +6,40 @@
 //  Copyright © 2018 Wanis Corporation. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class ListCompaniesViewModel {
     private let data: RetrieveContacts
-    private var companies: [Company]
     
     var isEmpty: Bool {
-        return !(companies.count > 0)
+        return !(data.getCompanies().count > 0)
     }
     
     var count: Int {
-        return companies.count
+        return data.getCompanies().count
     }
     
     init(data: RetrieveContacts = InMemoryContacts()) {
         self.data = data
-        self.companies = data.getCompanies()
     }
     
     func getCompany(at position: Int) -> CompanyPresentation {
-        let company = companies[position]
+        let company = data.getCompanies()[position]
         
         return CompanyPresentation(name: company.companyName, ownerName: company.ownerName, initials: initials(with: company.companyName))
     }
     
     func removeCompany(at position: Int) -> Bool {
-        return data.delete(companies[position])
+        return data.delete(data.getCompanies()[position])
+    }
+    
+    func prepare(for segue: UIStoryboardSegue, at position: Int) {
+        guard let viewController = segue.destination as? DetailCompanyTableViewController else {
+            return
+        }
+        let company = data.getCompanies()[position]
+        let detailPresentation = DetailCompanyPresentation(ownerName: company.ownerName, email: company.email, phone: company.phone, companyName: company.companyName, cnpj: company.cnpj, activationDate: company.activationDate, isMei: company.isMei)
+        viewController.presentation = detailPresentation
     }
     
     func initials(with name: String) -> String {

@@ -17,9 +17,17 @@ class DetailCompanyTableViewController: UITableViewController {
     @IBOutlet weak var activitiesDateLabel: UILabel!
     @IBOutlet weak var isMeiLabel: UILabel!
     
+    var presentation: DetailCompanyPresentation!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        companyNameLabel.text = presentation.companyName
+        ownerNameLabel.text = presentation.ownerName
+        emailLabel.text = presentation.email
+        phoneLabel.text = presentation.phone
+        cnpjLabel.text = presentation.cnpj
+        activitiesDateLabel.text = presentation.activationDate
+        isMeiLabel.text = presentation.isMei
     }
 }
