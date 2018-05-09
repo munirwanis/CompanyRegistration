@@ -40,7 +40,7 @@ class ListCompaniesViewModelTests: XCTestCase {
     }
     
     func testGetCompanyAt() {
-        XCTAssertTrue(viewModel.getCompany(at: 0).name == RetrieveContactsMock().getCompanies()[0].fantasyName)
+        XCTAssertTrue(viewModel.getCompany(at: 0).name == RetrieveContactsMock().getCompanies()[0].companyName)
     }
     
     func testPerformanceExample() {

@@ -28,7 +28,7 @@ class ListCompaniesViewModel {
     func getCompany(at position: Int) -> CompanyPresentation {
         let company = companies[position]
         
-        return CompanyPresentation(name: company.fantasyName, ownerName: company.founderName, initials: initials(with: company.fantasyName))
+        return CompanyPresentation(name: company.companyName, ownerName: company.ownerName, initials: initials(with: company.companyName))
     }
     
     func removeCompany(at position: Int) -> Bool {

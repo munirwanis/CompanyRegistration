@@ -11,21 +11,21 @@ import Foundation
 struct Company: ModelProtocol {
     var validations: [(() -> ValidationState)] = []
     
-    let founderName: String
+    let ownerName: String
     let email: String
-    let phoneNumber: String
-    let fantasyName: String
+    let phone: String
+    let companyName: String
     let cnpj: String
-    let activitiesStartingDate: Date
+    let activationDate: Date
     let isMei: Bool
     
-    init(founderName: String, email: String, phoneNumber: String, fantasyName: String, cnpj: String, activitiesStartingDate: Date, isMei: Bool) {
-        self.founderName = founderName
+    init(ownerName: String, email: String, phone: String, companyName: String, cnpj: String, activationDate: Date, isMei: Bool) {
+        self.ownerName = ownerName
         self.email = email
-        self.phoneNumber = phoneNumber
-        self.fantasyName = fantasyName
+        self.phone = phone
+        self.companyName = companyName
         self.cnpj = cnpj
-        self.activitiesStartingDate = activitiesStartingDate
+        self.activationDate = activationDate
         self.isMei = isMei
         
         self.validations = [validateName, validateEmail, validatePhone, validateCNPJ]
@@ -37,7 +37,7 @@ struct Company: ModelProtocol {
 
 extension Company {
     private func validateName() -> ValidationState {
-        let count = founderName.split(separator: " ").count
+        let count = ownerName.split(separator: " ").count
         if count < 2 {
             return .invalid("O nome do proprietário não é válido.")
         }
@@ -53,7 +53,7 @@ extension Company {
     private func validatePhone() -> ValidationState {
         let regex = "[0-9]{11}"
         let phonePredicate = NSPredicate(format: "SELF MATCHES %@", regex)
-        return phonePredicate.evaluate(with: phoneNumber) ? .valid : .invalid("O telefone digitado não é válido.")
+        return phonePredicate.evaluate(with: phone) ? .valid : .invalid("O telefone digitado não é válido.")
     }
     
     private func validateCNPJ() -> ValidationState {
