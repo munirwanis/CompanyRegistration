@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E202" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="CompanyData" representedClassName="CompanyData" syncable="YES" codeGenerationType="class">
-        <attribute name="activationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="cnpj" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="isMei" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="ownerName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+    <entity name="Company" representedClassName="CompanyData" syncable="YES" codeGenerationType="class">
+        <attribute name="activationDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="cnpj" attributeType="String" syncable="YES"/>
+        <attribute name="companyName" attributeType="String" syncable="YES"/>
+        <attribute name="email" attributeType="String" syncable="YES"/>
+        <attribute name="isMei" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ownerName" attributeType="String" syncable="YES"/>
+        <attribute name="phone" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="CompanyData" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="Company" positionX="-63" positionY="-18" width="128" height="150"/>
     </elements>
 </model>
