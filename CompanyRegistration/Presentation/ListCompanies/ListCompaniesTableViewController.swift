@@ -10,6 +10,10 @@ import UIKit
 
 class ListCompaniesTableViewController: UITableViewController {
 
+    private lazy var viewModel: ListCompaniesViewModel = {
+        return ListCompaniesViewModel()
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,32 +26,38 @@ class ListCompaniesTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 1
+        if viewModel.isEmpty {
+            return 1
+        }
+        return viewModel.count
     }
 
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return false
+        if viewModel.isEmpty {
+            return false
+        }
+        return true
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
+        if editingStyle == .delete, !viewModel.isEmpty {
             //TODO: Adds remove from index
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EmptyStateCell", for: indexPath)
-        
-
-        // Configure the cell...
-
+        if viewModel.isEmpty {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "EmptyStateCell", for: indexPath)
+            return cell
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CompanyCell", for: indexPath) as! CompanyCell
+        let company = viewModel.getCompany(at: indexPath.row)
+        cell.data = company
         return cell
     }
 

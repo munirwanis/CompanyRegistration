@@ -9,7 +9,12 @@
 import Foundation
 
 class InMemoryContacts: RetrieveContacts {
-    static var companies: [Company] = []
+//    static var companies: [Company] = []
+    static let company1 = Company(ownerName: "Steve Jobs", email: "jobs@apple.com", phone: "21981122335", companyName: "Apple Inc.", cnpj: "11253356651", activationDate: Date(), isMei: false)
+    static let company2 = Company(ownerName: "Bill Gates", email: "gates@windows.com", phone: "21981122335", companyName: "Microsoft Corporation", cnpj: "11253356651", activationDate: Date(), isMei: false)
+    static let company3 = Company(ownerName: "Elon Musk", email: "musk@tesla.com", phone: "21981122335", companyName: "Tesla", cnpj: "11253356651", activationDate: Date(), isMei: false)
+    static let company4 = Company(ownerName: "Steve Jobs", email: "jobs@next.com", phone: "21981122335", companyName: "Next Computers Enterteinment", cnpj: "11253356651", activationDate: Date(), isMei: false)
+    static var companies: [Company] = [company1, company2, company3, company4]
     
     func getCompanies() -> [Company] {
         return InMemoryContacts.companies

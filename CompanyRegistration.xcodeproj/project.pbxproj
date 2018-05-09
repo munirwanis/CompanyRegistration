@@ -25,6 +25,7 @@
 		A127BE6D20A2642D004D4B0C /* RetrieveContactsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6C20A2642D004D4B0C /* RetrieveContactsMock.swift */; };
 		A127BE6F20A264F5004D4B0C /* RetrieveContactsFailureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE6E20A264F5004D4B0C /* RetrieveContactsFailureMock.swift */; };
 		A127BE7120A337F5004D4B0C /* RetrieveContactsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7020A337F5004D4B0C /* RetrieveContactsData.swift */; };
+		A127BE7320A36C4D004D4B0C /* Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7220A36C4D004D4B0C /* Do.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		A127BE6C20A2642D004D4B0C /* RetrieveContactsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveContactsMock.swift; sourceTree = "<group>"; };
 		A127BE6E20A264F5004D4B0C /* RetrieveContactsFailureMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveContactsFailureMock.swift; sourceTree = "<group>"; };
 		A127BE7020A337F5004D4B0C /* RetrieveContactsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveContactsData.swift; sourceTree = "<group>"; };
+		A127BE7220A36C4D004D4B0C /* Do.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Do.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				A127BE3B209F991D004D4B0C /* LaunchScreen.storyboard */,
 				A127BE3E209F991D004D4B0C /* Info.plist */,
 				A127BE52209FFCD8004D4B0C /* Box.swift */,
+				A127BE7220A36C4D004D4B0C /* Do.swift */,
 			);
 			path = CompanyRegistration;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				A127BE57209FFE99004D4B0C /* Company.swift in Sources */,
 				A127BE7120A337F5004D4B0C /* RetrieveContactsData.swift in Sources */,
 				A127BE6320A24BE9004D4B0C /* RetrieveContacts.swift in Sources */,
+				A127BE7320A36C4D004D4B0C /* Do.swift in Sources */,
 				A127BE6B20A2566E004D4B0C /* ListCompaniesViewModel.swift in Sources */,
 				A127BE5C20A209A4004D4B0C /* ListCompaniesTableViewController.swift in Sources */,
 			);
