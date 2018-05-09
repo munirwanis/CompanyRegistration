@@ -530,6 +530,9 @@
                     <navigationItem key="navigationItem" title="Detalhes do Cliente" id="Y0c-Qp-YIu">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="asO-33-tig">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="deleteButtonPressed:" destination="7sH-3l-4je" id="jeJ-kh-tAU"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

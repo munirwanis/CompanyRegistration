@@ -29,6 +29,7 @@
 		A127BE7720A39A79004D4B0C /* DetailCompanyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7620A39A79004D4B0C /* DetailCompanyTableViewController.swift */; };
 		A127BE7920A39A90004D4B0C /* CreateCompanyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7820A39A90004D4B0C /* CreateCompanyTableViewController.swift */; };
 		A127BE7B20A3AAFD004D4B0C /* DetailCompanyPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7A20A3AAFD004D4B0C /* DetailCompanyPresentation.swift */; };
+		A127BE7D20A3B3B5004D4B0C /* DetailCompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7C20A3B3B5004D4B0C /* DetailCompanyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		A127BE7620A39A79004D4B0C /* DetailCompanyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCompanyTableViewController.swift; sourceTree = "<group>"; };
 		A127BE7820A39A90004D4B0C /* CreateCompanyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyTableViewController.swift; sourceTree = "<group>"; };
 		A127BE7A20A3AAFD004D4B0C /* DetailCompanyPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCompanyPresentation.swift; sourceTree = "<group>"; };
+		A127BE7C20A3B3B5004D4B0C /* DetailCompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCompanyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			children = (
 				A127BE7620A39A79004D4B0C /* DetailCompanyTableViewController.swift */,
 				A127BE7A20A3AAFD004D4B0C /* DetailCompanyPresentation.swift */,
+				A127BE7C20A3B3B5004D4B0C /* DetailCompanyViewModel.swift */,
 			);
 			path = DetailCompany;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				A127BE6920A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodeld in Sources */,
 				A127BE33209F9919004D4B0C /* AppDelegate.swift in Sources */,
 				A127BE6120A249B0004D4B0C /* CompanyPresentation.swift in Sources */,
+				A127BE7D20A3B3B5004D4B0C /* DetailCompanyViewModel.swift in Sources */,
 				A127BE57209FFE99004D4B0C /* Company.swift in Sources */,
 				A127BE7120A337F5004D4B0C /* RetrieveContactsData.swift in Sources */,
 				A127BE6320A24BE9004D4B0C /* RetrieveContacts.swift in Sources */,

@@ -24,7 +24,7 @@ struct DetailCompanyPresentation {
         self.companyName = companyName
         self.cnpj = cnpj
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd MMMM yyyy"
+        dateFormatter.dateStyle = .long
         self.activationDate = dateFormatter.string(from: activationDate)
         self.isMei = isMei ? "Sim" : "Não"
     }
