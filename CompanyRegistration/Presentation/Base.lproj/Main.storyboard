@@ -136,8 +136,8 @@
         <!--Criar Cadastro-->
         <scene sceneID="AyE-D4-6ad">
             <objects>
-                <tableViewController title="Criar Cadastro" id="x0C-Ay-sGx" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bxX-UW-IjW">
+                <tableViewController title="Criar Cadastro" id="x0C-Ay-sGx" customClass="CreateCompanyTableViewController" customModule="CompanyRegistration" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bxX-UW-IjW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -151,11 +151,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome Completo" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="X6B-xC-ukb">
+                                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome Completo" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="X6B-xC-ukb">
                                                     <rect key="frame" x="10" y="5" width="355" height="40"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" textContentType="name"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -173,11 +173,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="qKA-ag-LUK">
+                                                <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="qKA-ag-LUK">
                                                     <rect key="frame" x="10" y="5" width="355" height="40"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -195,11 +195,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Telefone" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="rSp-qs-hAP">
+                                                <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Telefone" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="rSp-qs-hAP">
                                                     <rect key="frame" x="10" y="5" width="355" height="40"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" textContentType="tel"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -217,11 +217,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome Fantasia" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="m9d-89-zJs">
+                                                <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome Fantasia" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="m9d-89-zJs">
                                                     <rect key="frame" x="10" y="5" width="355" height="40"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" textContentType="name"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -239,11 +239,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CNPJ" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Lwg-i9-K4N">
+                                                <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CNPJ" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Lwg-i9-K4N">
                                                     <rect key="frame" x="10" y="5" width="355" height="40"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -261,11 +261,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Data de Ativação" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="cnG-tI-TpY">
+                                                <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Data de Ativação" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="cnG-tI-TpY">
                                                     <rect key="frame" x="10" y="5" width="355" height="40"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done" textContentType="name"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -316,6 +316,15 @@
                             <outlet property="delegate" destination="x0C-Ay-sGx" id="PyV-RG-K0K"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="activationDateTextField" destination="cnG-tI-TpY" id="bkm-xk-Qvc"/>
+                        <outlet property="cnpjTextField" destination="Lwg-i9-K4N" id="DN6-CM-0xe"/>
+                        <outlet property="companyTextField" destination="m9d-89-zJs" id="Vfk-aw-O6B"/>
+                        <outlet property="emailTextField" destination="qKA-ag-LUK" id="QoP-7H-kg7"/>
+                        <outlet property="isMeiSwitch" destination="549-it-e07" id="pPG-9a-iJv"/>
+                        <outlet property="ownerNameTextField" destination="X6B-xC-ukb" id="54Q-IF-5Zq"/>
+                        <outlet property="phoneTextField" destination="rSp-qs-hAP" id="KSp-Ps-VoX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KWj-fn-1Jo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -324,7 +333,7 @@
         <!--Detalhes do Cliente-->
         <scene sceneID="j5q-ks-Fcx">
             <objects>
-                <tableViewController title="Detalhes do Cliente" id="7sH-3l-4je" sceneMemberID="viewController">
+                <tableViewController title="Detalhes do Cliente" id="7sH-3l-4je" customClass="DetailCompanyTableViewController" customModule="CompanyRegistration" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="43q-vH-sNN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -523,6 +532,15 @@
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="activitiesDateLabel" destination="44C-1B-1c3" id="ACh-Sw-7cT"/>
+                        <outlet property="cnpjLabel" destination="vEA-bJ-W1G" id="f64-Ya-wX9"/>
+                        <outlet property="companyNameLabel" destination="WhD-Vh-LZL" id="Saf-kn-5ee"/>
+                        <outlet property="emailLabel" destination="VqY-Hs-NvS" id="tt9-WW-hoc"/>
+                        <outlet property="isMeiLabel" destination="4FG-8z-y0G" id="L6i-4C-GoD"/>
+                        <outlet property="ownerNameLabel" destination="kjF-V4-4MG" id="OVn-mu-Cmq"/>
+                        <outlet property="phoneLabel" destination="Ky6-se-vb2" id="5Pr-Og-OZb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qb9-o4-xOO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
