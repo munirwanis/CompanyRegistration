@@ -316,6 +316,13 @@
                             <outlet property="delegate" destination="x0C-Ay-sGx" id="PyV-RG-K0K"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Cadastrar" id="MaP-e5-gOi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="wHo-Ct-D0l">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="x0C-Ay-sGx" id="ShY-lH-2Vo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activationDateTextField" destination="cnG-tI-TpY" id="bkm-xk-Qvc"/>
                         <outlet property="cnpjTextField" destination="Lwg-i9-K4N" id="DN6-CM-0xe"/>

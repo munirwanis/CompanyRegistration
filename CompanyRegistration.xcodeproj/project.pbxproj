@@ -30,6 +30,8 @@
 		A127BE7920A39A90004D4B0C /* CreateCompanyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7820A39A90004D4B0C /* CreateCompanyTableViewController.swift */; };
 		A127BE7B20A3AAFD004D4B0C /* DetailCompanyPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7A20A3AAFD004D4B0C /* DetailCompanyPresentation.swift */; };
 		A127BE7D20A3B3B5004D4B0C /* DetailCompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7C20A3B3B5004D4B0C /* DetailCompanyViewModel.swift */; };
+		A127BE7F20A49CF8004D4B0C /* CreateCompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7E20A49CF8004D4B0C /* CreateCompanyViewModel.swift */; };
+		A127BE8120A4A0F2004D4B0C /* CreateCompanyPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE8020A4A0F2004D4B0C /* CreateCompanyPresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		A127BE7820A39A90004D4B0C /* CreateCompanyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyTableViewController.swift; sourceTree = "<group>"; };
 		A127BE7A20A3AAFD004D4B0C /* DetailCompanyPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCompanyPresentation.swift; sourceTree = "<group>"; };
 		A127BE7C20A3B3B5004D4B0C /* DetailCompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCompanyViewModel.swift; sourceTree = "<group>"; };
+		A127BE7E20A49CF8004D4B0C /* CreateCompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyViewModel.swift; sourceTree = "<group>"; };
+		A127BE8020A4A0F2004D4B0C /* CreateCompanyPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyPresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				A127BE7820A39A90004D4B0C /* CreateCompanyTableViewController.swift */,
+				A127BE7E20A49CF8004D4B0C /* CreateCompanyViewModel.swift */,
+				A127BE8020A4A0F2004D4B0C /* CreateCompanyPresentation.swift */,
 			);
 			path = CreateCompany;
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 			files = (
 				A127BE7B20A3AAFD004D4B0C /* DetailCompanyPresentation.swift in Sources */,
 				A127BE53209FFCD8004D4B0C /* Box.swift in Sources */,
+				A127BE7F20A49CF8004D4B0C /* CreateCompanyViewModel.swift in Sources */,
 				A127BE6520A24BF4004D4B0C /* InMemoryContacts.swift in Sources */,
 				A127BE5F20A248BF004D4B0C /* CompanyCell.swift in Sources */,
 				A127BE59209FFF79004D4B0C /* ModelProtocol.swift in Sources */,
@@ -320,6 +327,7 @@
 				A127BE7920A39A90004D4B0C /* CreateCompanyTableViewController.swift in Sources */,
 				A127BE7320A36C4D004D4B0C /* Do.swift in Sources */,
 				A127BE6B20A2566E004D4B0C /* ListCompaniesViewModel.swift in Sources */,
+				A127BE8120A4A0F2004D4B0C /* CreateCompanyPresentation.swift in Sources */,
 				A127BE5C20A209A4004D4B0C /* ListCompaniesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
