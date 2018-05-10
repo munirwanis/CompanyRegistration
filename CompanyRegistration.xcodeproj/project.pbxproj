@@ -33,6 +33,7 @@
 		A127BE7F20A49CF8004D4B0C /* CreateCompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7E20A49CF8004D4B0C /* CreateCompanyViewModel.swift */; };
 		A127BE8120A4A0F2004D4B0C /* CreateCompanyPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE8020A4A0F2004D4B0C /* CreateCompanyPresentation.swift */; };
 		A127BE8420A4C053004D4B0C /* VSTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A127BE8320A4C053004D4B0C /* VSTextField.framework */; };
+		A127BE8820A4DA7E004D4B0C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE8720A4DA7E004D4B0C /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		A127BE7E20A49CF8004D4B0C /* CreateCompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyViewModel.swift; sourceTree = "<group>"; };
 		A127BE8020A4A0F2004D4B0C /* CreateCompanyPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyPresentation.swift; sourceTree = "<group>"; };
 		A127BE8320A4C053004D4B0C /* VSTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VSTextField.framework; path = Carthage/Build/iOS/VSTextField.framework; sourceTree = "<group>"; };
+		A127BE8720A4DA7E004D4B0C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		A127BE31209F9919004D4B0C /* CompanyRegistration */ = {
 			isa = PBXGroup;
 			children = (
+				A127BE8620A4DA6C004D4B0C /* Extensions */,
 				A127BE6620A24E60004D4B0C /* Data */,
 				A127BE5A20A2069B004D4B0C /* Presentation */,
 				A127BE54209FFE06004D4B0C /* Domain */,
@@ -219,6 +222,14 @@
 				A127BE8320A4C053004D4B0C /* VSTextField.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A127BE8620A4DA6C004D4B0C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A127BE8720A4DA7E004D4B0C /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +359,7 @@
 				A127BE59209FFF79004D4B0C /* ModelProtocol.swift in Sources */,
 				A127BE6920A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodeld in Sources */,
 				A127BE33209F9919004D4B0C /* AppDelegate.swift in Sources */,
+				A127BE8820A4DA7E004D4B0C /* UIViewController+Extension.swift in Sources */,
 				A127BE6120A249B0004D4B0C /* CompanyPresentation.swift in Sources */,
 				A127BE7D20A3B3B5004D4B0C /* DetailCompanyViewModel.swift in Sources */,
 				A127BE57209FFE99004D4B0C /* Company.swift in Sources */,

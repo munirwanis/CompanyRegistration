@@ -62,6 +62,7 @@ class ListCompaniesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CompanyCell", for: indexPath) as! CompanyCell
         let company = viewModel.getCompany(at: indexPath.row)
         cell.data = company
+        cell.initialsColor = UIColor(named: indexPath.row % 2 == 0 ? "Purple" : "Orange")
         return cell
     }
     
