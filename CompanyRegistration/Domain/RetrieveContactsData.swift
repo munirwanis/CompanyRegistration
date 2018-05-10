@@ -9,6 +9,12 @@
 import UIKit
 import CoreData
 
+extension CompanyData {
+    var isEmpty: Bool {
+        return (ownerName == nil || email == nil || phone == nil || companyName == nil || cnpj == nil || activationDate == nil)
+    }
+}
+
 class RetrieveContactsData: RetrieveContacts {
     private let companyContext: CompanyData
     private let context: NSManagedObjectContext
@@ -24,7 +30,11 @@ class RetrieveContactsData: RetrieveContacts {
     func getCompanies() -> [Company] {
         let companyFetch = NSFetchRequest<NSFetchRequestResult>(entityName: entityIdentifier)
         do {
-            let companyData = try context.fetch(companyFetch) as? [CompanyData]
+            var companyData = try context.fetch(companyFetch) as? [CompanyData]
+            
+            if let removableIndex = companyData?.index(where: { $0.isEmpty }) {
+                companyData?.remove(at: removableIndex)
+            }
             
             let companies = companyData?.compactMap {
                 Company(ownerName: $0.ownerName!, email: $0.email!, phone: $0.phone!, companyName: $0.companyName!, cnpj: $0.cnpj!, activationDate: $0.activationDate!, isMei: $0.isMei)
@@ -56,7 +66,15 @@ class RetrieveContactsData: RetrieveContacts {
     }
     
     func insert(_ company: Company) -> Bool {
-        let companyContext = NSEntityDescription.insertNewObject(forEntityName: entityIdentifier, into: context) as! CompanyData
+//        let companyContext = NSEntityDescription.insertNewObject(forEntityName: entityIdentifier, into: context) as! CompanyData
+//        companyContext.setValue(company.activationDate, forKey: "activationDate")
+//        companyContext.setValue(company.cnpj, forKey: "cnpj")
+//        companyContext.setValue(company.companyName, forKey: "companyName")
+//        companyContext.setValue(company.email, forKey: "email")
+//        companyContext.setValue(company.isMei, forKey: "isMei")
+//        companyContext.setValue(company.ownerName, forKey: "ownerName")
+//        companyContext.setValue(company.phone, forKey: "phone")
+        
         companyContext.activationDate = company.activationDate
         companyContext.cnpj = company.cnpj
         companyContext.companyName = company.companyName

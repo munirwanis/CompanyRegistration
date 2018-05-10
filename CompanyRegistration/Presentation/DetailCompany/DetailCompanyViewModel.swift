@@ -11,7 +11,7 @@ import Foundation
 class DetailCompanyViewModel {
     let data: RetrieveContacts
     
-    init(data: RetrieveContacts = InMemoryContacts()) {
+    init(data: RetrieveContacts = RetrieveContactsData()) {
         self.data = data
     }
     

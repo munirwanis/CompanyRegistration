@@ -19,7 +19,7 @@ class ListCompaniesViewModel {
         return data.getCompanies().count
     }
     
-    init(data: RetrieveContacts = InMemoryContacts()) {
+    init(data: RetrieveContacts = RetrieveContactsData()) {
         self.data = data
     }
     
