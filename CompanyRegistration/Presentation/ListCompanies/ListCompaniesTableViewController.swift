@@ -10,9 +10,7 @@ import UIKit
 
 class ListCompaniesTableViewController: UITableViewController {
 
-    private lazy var viewModel: ListCompaniesViewModel = {
-        return ListCompaniesViewModel()
-    }()
+    let viewModel = ListCompaniesViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()

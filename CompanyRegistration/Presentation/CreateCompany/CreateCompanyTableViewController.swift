@@ -37,16 +37,6 @@ class CreateCompanyTableViewController: UITableViewController {
         return p
     }()
     
-    private lazy var keyboardToolbar: UIToolbar = {
-        let t = UIToolbar()
-        
-        t.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: 40)
-        
-        let okButton = UIBarButtonItem(title: "OK", style: .plain, target: self, action: #selector(toolbarButtonPressed))
-        t.setItems([okButton], animated: true)
-        return t
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -108,9 +98,5 @@ extension CreateCompanyTableViewController {
     @objc private func datePickerValueDidChange(_ sender: UIDatePicker) {
         presentation.activationDate = sender.date
         activationDateTextField.text = dateFormatter.string(from: sender.date)
-    }
-    
-    @objc private func toolbarButtonPressed() {
-        
     }
 }
