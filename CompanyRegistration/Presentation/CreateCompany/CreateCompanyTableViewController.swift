@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import VSTextField
 
 class CreateCompanyTableViewController: UITableViewController {
     @IBOutlet weak var ownerNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var phoneTextField: VSTextField!
     @IBOutlet weak var companyTextField: UITextField!
-    @IBOutlet weak var cnpjTextField: UITextField!
+    @IBOutlet weak var cnpjTextField: VSTextField!
     @IBOutlet weak var activationDateTextField: UITextField!
     @IBOutlet weak var isMeiSwitch: UISwitch!
     
@@ -25,8 +26,10 @@ class CreateCompanyTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        phoneTextField.setFormatting("(**) *** *** ***", replacementChar: "*")
+        cnpjTextField.setFormatting("**.***.***/****-**", replacementChar: "*")
     }
+    
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
         presentation.ownerName = ownerNameTextField.text
         presentation.email = emailTextField.text

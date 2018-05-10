@@ -32,6 +32,7 @@
 		A127BE7D20A3B3B5004D4B0C /* DetailCompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7C20A3B3B5004D4B0C /* DetailCompanyViewModel.swift */; };
 		A127BE7F20A49CF8004D4B0C /* CreateCompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE7E20A49CF8004D4B0C /* CreateCompanyViewModel.swift */; };
 		A127BE8120A4A0F2004D4B0C /* CreateCompanyPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE8020A4A0F2004D4B0C /* CreateCompanyPresentation.swift */; };
+		A127BE8420A4C053004D4B0C /* VSTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A127BE8320A4C053004D4B0C /* VSTextField.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		A127BE7C20A3B3B5004D4B0C /* DetailCompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCompanyViewModel.swift; sourceTree = "<group>"; };
 		A127BE7E20A49CF8004D4B0C /* CreateCompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyViewModel.swift; sourceTree = "<group>"; };
 		A127BE8020A4A0F2004D4B0C /* CreateCompanyPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyPresentation.swift; sourceTree = "<group>"; };
+		A127BE8320A4C053004D4B0C /* VSTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VSTextField.framework; path = Carthage/Build/iOS/VSTextField.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A127BE8420A4C053004D4B0C /* VSTextField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +103,7 @@
 				A127BE31209F9919004D4B0C /* CompanyRegistration */,
 				A127BE46209F991D004D4B0C /* CompanyRegistrationTests */,
 				A127BE30209F9919004D4B0C /* Products */,
+				A127BE8220A4C052004D4B0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,6 +213,14 @@
 			path = CreateCompany;
 			sourceTree = "<group>";
 		};
+		A127BE8220A4C052004D4B0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A127BE8320A4C053004D4B0C /* VSTextField.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,6 +231,7 @@
 				A127BE2B209F9919004D4B0C /* Sources */,
 				A127BE2C209F9919004D4B0C /* Frameworks */,
 				A127BE2D209F9919004D4B0C /* Resources */,
+				A127BE8520A4C081004D4B0C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -304,6 +317,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A127BE8520A4C081004D4B0C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/VSTextField.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A127BE2B209F9919004D4B0C /* Sources */ = {
@@ -492,6 +522,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4K48S49BZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CompanyRegistration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -500,7 +534,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wanis.CompanyRegistration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -510,6 +544,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4K48S49BZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CompanyRegistration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -518,7 +556,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wanis.CompanyRegistration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
