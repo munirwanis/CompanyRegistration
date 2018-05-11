@@ -20,7 +20,11 @@ class ListCompaniesViewModel {
     }
     
     init(data: RetrieveContacts = RetrieveContactsData()) {
-        self.data = data
+        if AppDelegate.isUITest, data is RetrieveContactsData  {
+            self.data = InMemoryContacts()
+        } else {
+            self.data = data
+        }
     }
     
     func getCompany(at position: Int) -> CompanyPresentation {

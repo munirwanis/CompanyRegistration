@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A1076D5820A60F68005785F9 /* CreateCompanyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1076D5720A60F68005785F9 /* CreateCompanyViewModelTests.swift */; };
+		A1076D6020A61622005785F9 /* CompanyRegistrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1076D5F20A61622005785F9 /* CompanyRegistrationUITests.swift */; };
 		A127BE33209F9919004D4B0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE32209F9919004D4B0C /* AppDelegate.swift */; };
 		A127BE38209F9919004D4B0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A127BE36209F9919004D4B0C /* Main.storyboard */; };
 		A127BE3A209F991D004D4B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A127BE39209F991D004D4B0C /* Assets.xcassets */; };
@@ -39,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A1076D6220A61622005785F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A127BE27209F9919004D4B0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A127BE2E209F9919004D4B0C;
+			remoteInfo = CompanyRegistration;
+		};
 		A127BE44209F991D004D4B0C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A127BE27209F9919004D4B0C /* Project object */;
@@ -50,6 +58,9 @@
 
 /* Begin PBXFileReference section */
 		A1076D5720A60F68005785F9 /* CreateCompanyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyViewModelTests.swift; sourceTree = "<group>"; };
+		A1076D5D20A61621005785F9 /* CompanyRegistrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompanyRegistrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1076D5F20A61622005785F9 /* CompanyRegistrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRegistrationUITests.swift; sourceTree = "<group>"; };
+		A1076D6120A61622005785F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A127BE2F209F9919004D4B0C /* CompanyRegistration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompanyRegistration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A127BE32209F9919004D4B0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A127BE37209F9919004D4B0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +96,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A1076D5A20A61621005785F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A127BE2C209F9919004D4B0C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,11 +121,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1076D5E20A61622005785F9 /* CompanyRegistrationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1076D5F20A61622005785F9 /* CompanyRegistrationUITests.swift */,
+				A1076D6120A61622005785F9 /* Info.plist */,
+			);
+			path = CompanyRegistrationUITests;
+			sourceTree = "<group>";
+		};
 		A127BE26209F9919004D4B0C = {
 			isa = PBXGroup;
 			children = (
 				A127BE31209F9919004D4B0C /* CompanyRegistration */,
 				A127BE46209F991D004D4B0C /* CompanyRegistrationTests */,
+				A1076D5E20A61622005785F9 /* CompanyRegistrationUITests */,
 				A127BE30209F9919004D4B0C /* Products */,
 				A127BE8220A4C052004D4B0C /* Frameworks */,
 			);
@@ -118,6 +146,7 @@
 			children = (
 				A127BE2F209F9919004D4B0C /* CompanyRegistration.app */,
 				A127BE43209F991D004D4B0C /* CompanyRegistrationTests.xctest */,
+				A1076D5D20A61621005785F9 /* CompanyRegistrationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,6 +270,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A1076D5C20A61621005785F9 /* CompanyRegistrationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1076D6420A61622005785F9 /* Build configuration list for PBXNativeTarget "CompanyRegistrationUITests" */;
+			buildPhases = (
+				A1076D5920A61621005785F9 /* Sources */,
+				A1076D5A20A61621005785F9 /* Frameworks */,
+				A1076D5B20A61621005785F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1076D6320A61622005785F9 /* PBXTargetDependency */,
+			);
+			name = CompanyRegistrationUITests;
+			productName = CompanyRegistrationUITests;
+			productReference = A1076D5D20A61621005785F9 /* CompanyRegistrationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A127BE2E209F9919004D4B0C /* CompanyRegistration */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A127BE4C209F991D004D4B0C /* Build configuration list for PBXNativeTarget "CompanyRegistration" */;
@@ -287,6 +334,10 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Wanis Corporation";
 				TargetAttributes = {
+					A1076D5C20A61621005785F9 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = A127BE2E209F9919004D4B0C;
+					};
 					A127BE2E209F9919004D4B0C = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -311,11 +362,19 @@
 			targets = (
 				A127BE2E209F9919004D4B0C /* CompanyRegistration */,
 				A127BE42209F991D004D4B0C /* CompanyRegistrationTests */,
+				A1076D5C20A61621005785F9 /* CompanyRegistrationUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A1076D5B20A61621005785F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A127BE2D209F9919004D4B0C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,6 +412,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A1076D5920A61621005785F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1076D6020A61622005785F9 /* CompanyRegistrationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A127BE2B209F9919004D4B0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,6 +462,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A1076D6320A61622005785F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A127BE2E209F9919004D4B0C /* CompanyRegistration */;
+			targetProxy = A1076D6220A61622005785F9 /* PBXContainerItemProxy */;
+		};
 		A127BE45209F991D004D4B0C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A127BE2E209F9919004D4B0C /* CompanyRegistration */;
@@ -422,6 +494,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A1076D6520A61622005785F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4K48S49BZ;
+				INFOPLIST_FILE = CompanyRegistrationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanis.CompanyRegistrationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CompanyRegistration;
+			};
+			name = Debug;
+		};
+		A1076D6620A61622005785F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4K48S49BZ;
+				INFOPLIST_FILE = CompanyRegistrationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanis.CompanyRegistrationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CompanyRegistration;
+			};
+			name = Release;
+		};
 		A127BE4A209F991D004D4B0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -625,6 +735,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A1076D6420A61622005785F9 /* Build configuration list for PBXNativeTarget "CompanyRegistrationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1076D6520A61622005785F9 /* Debug */,
+				A1076D6620A61622005785F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A127BE2A209F9919004D4B0C /* Build configuration list for PBXProject "CompanyRegistration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

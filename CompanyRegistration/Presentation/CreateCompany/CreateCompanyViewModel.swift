@@ -12,7 +12,11 @@ class CreateCompanyViewModel {
     private let data: RetrieveContacts
     
     init(data: RetrieveContacts = RetrieveContactsData()) {
-        self.data = data
+        if AppDelegate.isUITest, data is RetrieveContactsData  {
+            self.data = InMemoryContacts()
+        } else {
+            self.data = data
+        }
     }
     
     func save(_ company: CreateCompanyPresentation) -> String? {
