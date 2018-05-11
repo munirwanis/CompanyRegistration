@@ -9,7 +9,17 @@
         <attribute name="ownerName" attributeType="String" syncable="YES"/>
         <attribute name="phone" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Headlines" representedClassName="HeadlinesData" syncable="YES" codeGenerationType="class">
+        <attribute name="activationDate" attributeType="String" syncable="YES"/>
+        <attribute name="cnpj" attributeType="String" syncable="YES"/>
+        <attribute name="companyName" attributeType="String" syncable="YES"/>
+        <attribute name="email" attributeType="String" syncable="YES"/>
+        <attribute name="isMei" attributeType="String" syncable="YES"/>
+        <attribute name="ownerName" attributeType="String" syncable="YES"/>
+        <attribute name="phone" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Company" positionX="-63" positionY="-18" width="128" height="150"/>
+        <element name="Headlines" positionX="-63" positionY="36" width="128" height="150"/>
     </elements>
 </model>
