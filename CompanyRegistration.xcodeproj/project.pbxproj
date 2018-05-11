@@ -34,6 +34,7 @@
 		A127BE8120A4A0F2004D4B0C /* CreateCompanyPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE8020A4A0F2004D4B0C /* CreateCompanyPresentation.swift */; };
 		A127BE8420A4C053004D4B0C /* VSTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A127BE8320A4C053004D4B0C /* VSTextField.framework */; };
 		A127BE8820A4DA7E004D4B0C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE8720A4DA7E004D4B0C /* UIViewController+Extension.swift */; };
+		A127BE8B20A60952004D4B0C /* DetailCompanyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE8A20A60952004D4B0C /* DetailCompanyViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		A127BE8020A4A0F2004D4B0C /* CreateCompanyPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyPresentation.swift; sourceTree = "<group>"; };
 		A127BE8320A4C053004D4B0C /* VSTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VSTextField.framework; path = Carthage/Build/iOS/VSTextField.framework; sourceTree = "<group>"; };
 		A127BE8720A4DA7E004D4B0C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		A127BE8A20A60952004D4B0C /* DetailCompanyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCompanyViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		A127BE46209F991D004D4B0C /* CompanyRegistrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				A127BE8A20A60952004D4B0C /* DetailCompanyViewModelTests.swift */,
 				A127BE47209F991D004D4B0C /* ListCompaniesViewModelTests.swift */,
 				A127BE6C20A2642D004D4B0C /* RetrieveContactsMock.swift */,
 				A127BE6E20A264F5004D4B0C /* RetrieveContactsFailureMock.swift */,
@@ -381,6 +384,7 @@
 				A127BE6D20A2642D004D4B0C /* RetrieveContactsMock.swift in Sources */,
 				A127BE6F20A264F5004D4B0C /* RetrieveContactsFailureMock.swift in Sources */,
 				A127BE48209F991D004D4B0C /* ListCompaniesViewModelTests.swift in Sources */,
+				A127BE8B20A60952004D4B0C /* DetailCompanyViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
