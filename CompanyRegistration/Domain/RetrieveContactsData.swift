@@ -16,15 +16,12 @@ extension CompanyData {
 }
 
 class RetrieveContactsData: RetrieveContacts {
-    private let companyContext: CompanyData
     private let context: NSManagedObjectContext
     private let entityIdentifier = "Company"
     
     init() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         context = appDelegate.persistentContainer.viewContext
-        let companyEntity = NSEntityDescription.entity(forEntityName: entityIdentifier, in: context)!
-        companyContext = CompanyData(entity: companyEntity, insertInto: context)
     }
     
     func getCompanies() -> [Company] {
@@ -66,14 +63,7 @@ class RetrieveContactsData: RetrieveContacts {
     }
     
     func insert(_ company: Company) -> Bool {
-//        let companyContext = NSEntityDescription.insertNewObject(forEntityName: entityIdentifier, into: context) as! CompanyData
-//        companyContext.setValue(company.activationDate, forKey: "activationDate")
-//        companyContext.setValue(company.cnpj, forKey: "cnpj")
-//        companyContext.setValue(company.companyName, forKey: "companyName")
-//        companyContext.setValue(company.email, forKey: "email")
-//        companyContext.setValue(company.isMei, forKey: "isMei")
-//        companyContext.setValue(company.ownerName, forKey: "ownerName")
-//        companyContext.setValue(company.phone, forKey: "phone")
+        let companyContext = NSEntityDescription.insertNewObject(forEntityName: entityIdentifier, into: context) as! CompanyData
         
         companyContext.activationDate = company.activationDate
         companyContext.cnpj = company.cnpj
@@ -82,6 +72,7 @@ class RetrieveContactsData: RetrieveContacts {
         companyContext.isMei = company.isMei
         companyContext.ownerName = company.ownerName
         companyContext.phone = company.phone
+        
         do {
             try context.save()
         } catch {
