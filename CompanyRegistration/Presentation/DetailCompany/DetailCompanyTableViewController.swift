@@ -19,6 +19,8 @@ class DetailCompanyTableViewController: UITableViewController {
     @IBOutlet weak var activitiesDateLabel: UILabel!
     @IBOutlet weak var isMeiLabel: UILabel!
     
+    @IBOutlet weak var deleteCompanyButton: UIBarButtonItem!
+    
     var presentation: DetailCompanyPresentation!
     
     override func viewDidLoad() {
@@ -31,6 +33,8 @@ class DetailCompanyTableViewController: UITableViewController {
         cnpjLabel.text = presentation.cnpj
         activitiesDateLabel.text = presentation.activationDate
         isMeiLabel.text = presentation.isMei
+        
+        deleteCompanyButton.accessibilityIdentifier = "deleteCompanyButton"
     }
     
     private func showErrorAlert() {

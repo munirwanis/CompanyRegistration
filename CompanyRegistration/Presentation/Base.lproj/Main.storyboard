@@ -128,6 +128,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="yoF-31-ofU" id="12y-cE-o91"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTk-FE-DTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -546,6 +549,7 @@
                         <outlet property="activitiesDateLabel" destination="44C-1B-1c3" id="ACh-Sw-7cT"/>
                         <outlet property="cnpjLabel" destination="vEA-bJ-W1G" id="f64-Ya-wX9"/>
                         <outlet property="companyNameLabel" destination="WhD-Vh-LZL" id="Saf-kn-5ee"/>
+                        <outlet property="deleteCompanyButton" destination="asO-33-tig" id="YB6-Qq-jbv"/>
                         <outlet property="emailLabel" destination="VqY-Hs-NvS" id="tt9-WW-hoc"/>
                         <outlet property="isMeiLabel" destination="4FG-8z-y0G" id="L6i-4C-GoD"/>
                         <outlet property="ownerNameLabel" destination="kjF-V4-4MG" id="OVn-mu-Cmq"/>

@@ -12,10 +12,13 @@ class ListCompaniesTableViewController: UITableViewController {
 
     let viewModel = ListCompaniesViewModel()
     
+    @IBOutlet private weak var addButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         self.navigationItem.leftBarButtonItem = self.editButtonItem
+        self.navigationItem.leftBarButtonItem = self.editButtonItem
+        self.addButton.accessibilityIdentifier = "addCompanyButton"
     }
     
     override func viewWillAppear(_ animated: Bool) {
