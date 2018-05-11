@@ -8,23 +8,13 @@
 
 import UIKit
 
-class ListCompaniesViewModel {
-    private let data: RetrieveContacts
-    
+class ListCompaniesViewModel: BaseCompanyViewModel {    
     var isEmpty: Bool {
         return !(data.getCompanies().count > 0)
     }
     
     var count: Int {
         return data.getCompanies().count
-    }
-    
-    init(data: RetrieveContacts = RetrieveContactsData()) {
-        if AppDelegate.isUITest, data is RetrieveContactsData  {
-            self.data = InMemoryContacts()
-        } else {
-            self.data = data
-        }
     }
     
     func getCompany(at position: Int) -> CompanyPresentation {

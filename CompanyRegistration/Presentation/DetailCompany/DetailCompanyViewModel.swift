@@ -8,17 +8,7 @@
 
 import Foundation
 
-class DetailCompanyViewModel {
-    let data: RetrieveContacts
-    
-    init(data: RetrieveContacts = RetrieveContactsData()) {
-        if AppDelegate.isUITest, data is RetrieveContactsData  {
-            self.data = InMemoryContacts()
-        } else {
-            self.data = data
-        }
-    }
-    
+class DetailCompanyViewModel: BaseCompanyViewModel {    
     func delete(_ company: DetailCompanyPresentation) -> Bool {
         guard let company = data.getCompany(from: company.email) else {
             return false

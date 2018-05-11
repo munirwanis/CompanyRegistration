@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A1076D5820A60F68005785F9 /* CreateCompanyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1076D5720A60F68005785F9 /* CreateCompanyViewModelTests.swift */; };
 		A1076D6020A61622005785F9 /* CompanyRegistrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1076D5F20A61622005785F9 /* CompanyRegistrationUITests.swift */; };
+		A1076D6820A6260B005785F9 /* BaseCompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1076D6720A6260B005785F9 /* BaseCompanyViewModel.swift */; };
 		A127BE33209F9919004D4B0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE32209F9919004D4B0C /* AppDelegate.swift */; };
 		A127BE38209F9919004D4B0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A127BE36209F9919004D4B0C /* Main.storyboard */; };
 		A127BE3A209F991D004D4B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A127BE39209F991D004D4B0C /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		A1076D5D20A61621005785F9 /* CompanyRegistrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompanyRegistrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1076D5F20A61622005785F9 /* CompanyRegistrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRegistrationUITests.swift; sourceTree = "<group>"; };
 		A1076D6120A61622005785F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1076D6720A6260B005785F9 /* BaseCompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCompanyViewModel.swift; sourceTree = "<group>"; };
 		A127BE2F209F9919004D4B0C /* CompanyRegistration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompanyRegistration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A127BE32209F9919004D4B0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A127BE37209F9919004D4B0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				A127BE7420A39A51004D4B0C /* DetailCompany */,
 				A127BE5D20A22908004D4B0C /* ListCompanies */,
 				A127BE36209F9919004D4B0C /* Main.storyboard */,
+				A1076D6720A6260B005785F9 /* BaseCompanyViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -235,8 +238,8 @@
 			isa = PBXGroup;
 			children = (
 				A127BE7620A39A79004D4B0C /* DetailCompanyTableViewController.swift */,
-				A127BE7A20A3AAFD004D4B0C /* DetailCompanyPresentation.swift */,
 				A127BE7C20A3B3B5004D4B0C /* DetailCompanyViewModel.swift */,
+				A127BE7A20A3AAFD004D4B0C /* DetailCompanyPresentation.swift */,
 			);
 			path = DetailCompany;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				A127BE6520A24BF4004D4B0C /* InMemoryContacts.swift in Sources */,
 				A127BE5F20A248BF004D4B0C /* CompanyCell.swift in Sources */,
 				A127BE59209FFF79004D4B0C /* ModelProtocol.swift in Sources */,
+				A1076D6820A6260B005785F9 /* BaseCompanyViewModel.swift in Sources */,
 				A127BE6920A24EA0004D4B0C /* CompanyCoreDataModel.xcdatamodeld in Sources */,
 				A127BE33209F9919004D4B0C /* AppDelegate.swift in Sources */,
 				A127BE8820A4DA7E004D4B0C /* UIViewController+Extension.swift in Sources */,

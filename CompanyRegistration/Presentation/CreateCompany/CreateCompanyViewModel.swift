@@ -8,17 +8,7 @@
 
 import Foundation
 
-class CreateCompanyViewModel {
-    private let data: RetrieveContacts
-    
-    init(data: RetrieveContacts = RetrieveContactsData()) {
-        if AppDelegate.isUITest, data is RetrieveContactsData  {
-            self.data = InMemoryContacts()
-        } else {
-            self.data = data
-        }
-    }
-    
+class CreateCompanyViewModel: BaseCompanyViewModel {
     func save(_ company: CreateCompanyPresentation) -> String? {
         guard
             company.ownerName?.isEmpty == false,
