@@ -16,6 +16,7 @@ class RetrieveHeadlinesData: RetrieveHeadlines {
     init() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         context = appDelegate.persistentContainer.viewContext
+        generateData()
     }
     
     func getHeadlines() -> Headlines {
@@ -63,6 +64,7 @@ class RetrieveHeadlinesData: RetrieveHeadlines {
             headlinesContext.phone = "Telefone"
             headlinesContext.email = "Email"
             headlinesContext.ownerName = "Nome Completo"
+            headlinesContext.isMei = "É MEI?"
             
             try context.save()
         } catch {

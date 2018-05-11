@@ -331,6 +331,7 @@
                         <outlet property="cnpjTextField" destination="Lwg-i9-K4N" id="DN6-CM-0xe"/>
                         <outlet property="companyTextField" destination="m9d-89-zJs" id="Vfk-aw-O6B"/>
                         <outlet property="emailTextField" destination="qKA-ag-LUK" id="QoP-7H-kg7"/>
+                        <outlet property="isMeiLabel" destination="USM-qH-FbT" id="IkM-lW-9e6"/>
                         <outlet property="isMeiSwitch" destination="549-it-e07" id="pPG-9a-iJv"/>
                         <outlet property="ownerNameTextField" destination="X6B-xC-ukb" id="54Q-IF-5Zq"/>
                         <outlet property="phoneTextField" destination="rSp-qs-hAP" id="KSp-Ps-VoX"/>

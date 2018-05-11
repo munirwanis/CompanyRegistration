@@ -9,6 +9,17 @@
 import Foundation
 
 class CreateCompanyViewModel: BaseCompanyViewModel {
+    private var headlines: RetrieveHeadlines = RetrieveHeadlinesData()
+    
+    convenience init(data: RetrieveContacts = RetrieveContactsData(), headlines: RetrieveHeadlines = RetrieveHeadlinesData()) {
+        self.init(data: data)
+        if AppDelegate.isUITest, data is RetrieveHeadlines  {
+            self.headlines = InMemoryHeadlines()
+        } else {
+            self.headlines = headlines
+        }
+    }
+    
     func save(_ company: CreateCompanyPresentation) -> String? {
         guard
             company.ownerName?.isEmpty == false,
@@ -25,5 +36,9 @@ class CreateCompanyViewModel: BaseCompanyViewModel {
         case .valid: return data.insert(company) ? nil : "Ocorreu um erro ao tentar salvar os dados.\nTente novamente mais tarde."
         case .invalid(let message): return message
         }
+    }
+    
+    func getHeadlines() -> Headlines {
+        return headlines.getHeadlines()
     }
 }

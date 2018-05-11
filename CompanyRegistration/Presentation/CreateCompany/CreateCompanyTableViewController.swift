@@ -17,6 +17,7 @@ class CreateCompanyTableViewController: UITableViewController {
     @IBOutlet weak var cnpjTextField: VSTextField!
     @IBOutlet weak var activationDateTextField: UITextField!
     @IBOutlet weak var isMeiSwitch: UISwitch!
+    @IBOutlet weak var isMeiLabel: UILabel!
     
     private var presentation = CreateCompanyPresentation()
     private let viewModel = CreateCompanyViewModel()
@@ -47,8 +48,8 @@ class CreateCompanyTableViewController: UITableViewController {
 
 // MARK: - Setup
 
-extension CreateCompanyTableViewController {
-    private func setup() {
+private extension CreateCompanyTableViewController {
+    func setup() {
         phoneTextField.setFormatting("(**) *** *** ***", replacementChar: "*")
         cnpjTextField.setFormatting("**.***.***/****-**", replacementChar: "*")
         activationDateTextField.inputView = datePicker
@@ -59,6 +60,19 @@ extension CreateCompanyTableViewController {
         companyTextField.delegate = self
         cnpjTextField.delegate = self
         activationDateTextField.delegate = self
+        
+        setupHeadlines()
+    }
+    
+    func setupHeadlines() {
+        let headlines = viewModel.getHeadlines()
+        phoneTextField.placeholder = headlines.phone
+        cnpjTextField.placeholder = headlines.cnpj
+        activationDateTextField.placeholder = headlines.startDate
+        ownerNameTextField.placeholder = headlines.ownerName
+        emailTextField.placeholder = headlines.email
+        companyTextField.placeholder = headlines.companyName
+        isMeiLabel.text = headlines.isMei
     }
 }
 
