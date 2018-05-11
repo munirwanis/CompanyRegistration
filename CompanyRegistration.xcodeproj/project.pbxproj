@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1076D5820A60F68005785F9 /* CreateCompanyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1076D5720A60F68005785F9 /* CreateCompanyViewModelTests.swift */; };
 		A127BE33209F9919004D4B0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127BE32209F9919004D4B0C /* AppDelegate.swift */; };
 		A127BE38209F9919004D4B0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A127BE36209F9919004D4B0C /* Main.storyboard */; };
 		A127BE3A209F991D004D4B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A127BE39209F991D004D4B0C /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1076D5720A60F68005785F9 /* CreateCompanyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyViewModelTests.swift; sourceTree = "<group>"; };
 		A127BE2F209F9919004D4B0C /* CompanyRegistration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompanyRegistration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A127BE32209F9919004D4B0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A127BE37209F9919004D4B0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		A127BE46209F991D004D4B0C /* CompanyRegistrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				A1076D5720A60F68005785F9 /* CreateCompanyViewModelTests.swift */,
 				A127BE8A20A60952004D4B0C /* DetailCompanyViewModelTests.swift */,
 				A127BE47209F991D004D4B0C /* ListCompaniesViewModelTests.swift */,
 				A127BE6C20A2642D004D4B0C /* RetrieveContactsMock.swift */,
@@ -383,6 +386,7 @@
 			files = (
 				A127BE6D20A2642D004D4B0C /* RetrieveContactsMock.swift in Sources */,
 				A127BE6F20A264F5004D4B0C /* RetrieveContactsFailureMock.swift in Sources */,
+				A1076D5820A60F68005785F9 /* CreateCompanyViewModelTests.swift in Sources */,
 				A127BE48209F991D004D4B0C /* ListCompaniesViewModelTests.swift in Sources */,
 				A127BE8B20A60952004D4B0C /* DetailCompanyViewModelTests.swift in Sources */,
 			);
