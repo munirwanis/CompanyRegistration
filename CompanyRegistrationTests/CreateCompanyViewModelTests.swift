@@ -17,7 +17,7 @@ class CreateCompanyViewModelTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        viewModel = CreateCompanyViewModel(data: RetrieveContactsMock())
+        viewModel = CreateCompanyViewModel(data: RetrieveContactsMock(), headlines: InMemoryHeadlines())
         viewModelFailure = CreateCompanyViewModel(data: RetrieveContactsFailureMock())
     }
     
@@ -29,6 +29,17 @@ class CreateCompanyViewModelTests: XCTestCase {
     func testDeleteCompany() {
         let company = CreateCompanyPresentation(ownerName: "Munir Wanis", email: "wanis@mail.com", phone: "21981232323", companyName: "Skynet", cnpj: "12345678912345", activationDate: Date(), isMei: true)
         XCTAssertNil(viewModel.save(company))
+    }
+    
+    func testHeadlines() {
+        let headlines = viewModel.getHeadlines()
+        XCTAssertTrue(headlines.cnpj == "CNPJ")
+        XCTAssertTrue(headlines.ownerName == "Nome Completo")
+        XCTAssertTrue(headlines.email == "Email")
+        XCTAssertTrue(headlines.phone == "Telefone")
+        XCTAssertTrue(headlines.companyName == "Nome Fantasia")
+        XCTAssertTrue(headlines.startDate == "Data de Ativação")
+        XCTAssertTrue(headlines.isMei == "É MEI?")
     }
     
     func testDeleteCompanyFail() {

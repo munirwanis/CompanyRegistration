@@ -28,7 +28,7 @@ class RetrieveHeadlinesData: RetrieveHeadlines {
         return Headlines(
             ownerName: headlinesData.ownerName!,
             email: headlinesData.email!,
-            phone: headlinesData.email!,
+            phone: headlinesData.phone!,
             companyName: headlinesData.companyName!,
             cnpj: headlinesData.cnpj!,
             startDate: headlinesData.activationDate!,
